@@ -22,7 +22,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    SensitiveWordFilter::Filter.scan('色情电影')
+    SensitiveWordFilter::Filter.scan('色情电影', ['./text.text'])
 
 ## Development
 
