@@ -4,9 +4,9 @@ module SensitiveWordFilter
 
     attr_accessor :words, :tree
 
-    def initialize(words = [])
+    def initialize(words=nil)
       @tree = Hash.new
-      @words = words
+      @words = words || []
     end
 
     def dfa_tree

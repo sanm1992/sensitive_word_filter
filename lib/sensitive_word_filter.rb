@@ -14,7 +14,7 @@ module SensitiveWordFilter
 
     def initialize(file_paths=[])
       if file_paths.empty?
-        @words = Load.new("#{__dir__}/sensitive_word_filter/words/广告.text").load
+        raise Error.new('sensitive words file path is empty')
       else
         @words = Load.new(file_paths).load
       end
